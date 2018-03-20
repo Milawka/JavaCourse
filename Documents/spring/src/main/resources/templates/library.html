@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<table style="width:100%">
+    <caption>Books</caption>
+
+    <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Reference</th>
+    </tr>
+
+    <tr th:each="book : ${books}">
+        <td th:text="${book.getName()}"></td>
+        <td th:text="${book.getAuthor()}"></td>
+        <td><a th:href="${book.getReference()}">read</a></td>
+    </tr>
+
+</table>
+</body>
+</html>
