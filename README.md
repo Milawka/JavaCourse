@@ -1,6 +1,3 @@
-Inspect the branches to see 
-This is the homeworks of MIlana Nurgalieva for Java course 2018
-
 # Java course homeworks
 ###### Author: Milana Nurgalieva
 
